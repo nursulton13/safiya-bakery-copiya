@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Торт и выпечка от Safia в Ташкенте | Safia Cafe & Bakery</title>
+    <link rel="icon" sizes="60x60" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../menyu/style/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <div class="inside-navbar">
+                <div class="navbar-logo">
+                    <div class="navbar-logo-img">
+                        <a href="../index.html"><img src="../images/logo.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="navbar-city-link">
+                    <button navbar-city-button>Ташкент</button>
+                </div>
+                <div class="navbar-item">
+                    <ul>
+                        <li><a href="../o nas/index.html">О нас</a></li>
+                        <li><a href="#">Меню</a></li>
+                        <li><a href="../news/index.html">Новости</a></li>
+                        <li><a href="#">Рестораны</a></li>
+                        <li><a href="../contact/index.html">Контакты</a></li>
+                        <li><a class="dropdown" href="#">
+                                <span class="phone">+998 78 113 40 40</span>
+                                <span class="timetable">Ежедневно с 8:00 до 23:00</span>
+                            </a></li>
+                        <li>
+                            <select name="language" id="language" size="1">
+                                <option value="Rus">Русский</option>
+                                <option value="Eng">English</option>
+                                <option value="Uzb">uzbekcha</option>
+                            </select>
+                        </li>
+                        <li><a href="../search/index.html">
+                                <img src="../images/ic_search.svg" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <img src="../images/ic_profile.png" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <img src="../images/ic_cart.png" alt="">
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inside-navbar2">
+                <div class="navbar-menu-button" onclick="button()">
+                    <img src="../images/Без названия.svg" alt="">
+                </div>
+                <div class="navbar-logo-img2">
+                    <a href="../index.html"><img src="../images/logo.svg" alt=""></a>
+                </div>
+                <div class="navbar-icon-img">
+                    <ul>
+                        <li><a href="../search/index.html"><img src="../images/ic_search.svg" alt=""></a></li>
+                        <li><a href="#"><img src="../images/ic_profile.png" alt=""></a></li>
+                        <li><a href="#"><img src="../images/ic_cart.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="fixed-button">
+            <a href="#">Напишите нам</a>
+        </div>
+        
+        <div class="inside-container">
+            <!-- Corusel-img -->
+            <div class="corusel-img">
+                <div class="screen-menu" id="screen-menu">
+                    <ul style="height: 10%;">
+                        <li><a href="#">Ташкент</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="../o nas/index.html">О нас</a></li>
+                        <li><a href="#">Меню</a></li>
+                        <li><a href="../news/index.html">Новости</a></li>
+                        <li><a href="#">Рестораны</a></li>
+                        <li><a href="../contact/index.html">Контакты</a></li>
+                        <li>
+                            <select name="language" id="language" size="1">
+                                <option value="Rus">Русский</option>
+                                <option value="Eng">English</option>
+                                <option value="Uzb">Uzbekcha</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box0">
+                <div class="aside-menu">
+                    <p>Меню</p>
+                    <div class="aside-inside-menu">
+                        <ul>
+                            <li style="background-color: transparent;">
+                                <a style="color:rgba(0, 0, 0, 0.6)" href="#">За вкусненьким сюда
+                                    <div class="menu-show">
+                                        <ul>
+                                            <li><a href="#">Торты</a></li>
+                                            <li><a href="#">Большие торты</a></li>
+                                            <li><a href="#">🧇 Круглые пироги</a></li>
+                                            <li><a href="#">Большие пироги</a></li>
+                                            <li><a href="#">Сдобная выпечка</a></li>
+                                            <li><a href="#">Слоеная выпечка</a></li>
+                                            <li><a href="#">Эклеры</a></li>
+                                            <li><a href="#">Чак-чак</a></li>
+                                            <li><a href="#">Тарталетки</a></li>
+                                            <li><a href="#">Пирожное</a></li>
+                                            <li><a href="#">Печенье</a></li>
+                                            <li><a href="#">Кексы</a></li>
+                                            <li><a href="#">Макаронсы</a></li>
+                                            <li><a href="#">Мясная и несладкая выпечка</a></li>
+                                            <li><a href="#">Декор для дня рождения</a></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#">Правильное питание</a></li>
+                            <li><a href="#">Полуфабрикаты</a></li>
+                            <li><a href="#">Кофе в зёрнах</a></li>
+                            <li><a href="#">Ресторан Люмьер 🍽️</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="home">
+                    <div class="home-container">
+                        <p>Торты</p>
+                        <div class="home-menu">
+                            <input type="text" placeholder="Что вы ищите?">
+                            <button type="submit">Поиск</button>
+                        </div>
+                        <div class="home-card-group">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img1.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img2.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img3.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img1.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img2.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img3.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img1.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img2.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img3.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img1.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img2.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img3.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img1.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img2.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img3.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img1.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img2.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img3.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img1.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img2.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img3.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Зебра торт</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Сочный, пропитанный торт с ванильным и шоколадным кексовым бисквитом. Йогуртовым
+                                            суфле,
+                                            дольками
+                                            нектарина и свежими
+                                            ягодами (по сезону).Торт рассчитан на 10 - 12 персон.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-img">
+                <img src="../images/girl.png" alt="">
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="../o nas/index.html">О нас</a></li>
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="../news/index.html">Новости</a></li>
+                    <li><a href="#">Рестораны</a></li>
+                    <li><a href="#">Публичная оферта</a></li>
+                    <li><a href="#">Карьера</a></li>
+                    <li><a href="../contact/index.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="messenger">
+                <div><a href="#"><img src="../images/ic_facebook.png" alt=""></a></div>
+                <div><a href="#"><img src="../images/ic_instagram.png" alt=""></a></div>
+                <div><a href="#"><img src="../images/ic_telegram.png" alt=""></a></div>
+            </div>
+            <div class="footer-company">
+                <p>2021 Safia Cafe & Bakery. Все права защищены.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js/script.js"></script>
+</body>
+</html>
