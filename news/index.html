@@ -13,6 +13,27 @@
 <body>
     <div class="container">
 
+        <div class="container-modal" id="modal">
+            <div class="modal">
+                <div class="modal-exit">
+                    <img onclick="yop()" style="cursor:pointer;width:25px;height:25px"
+                        src="https://img.icons8.com/ios/50/000000/close-window.png" />
+                </div>
+                <div class="modal-img-logo">
+                    <img src="../images/logo.svg" alt="">
+                </div>
+                <div class="modal-input">
+                    <input type="text" placeholder="Введите номер телефона">
+                </div>
+                <div class="modal-button">
+                    <button type="submit">Далее</button>
+                </div>
+            </div>
+            <div class="fixed-button">
+                <a href="#">Напишите нам</a>
+            </div>
+        </div>
+
         <div class="navbar">
             <div class="inside-navbar">
                 <div class="navbar-logo">
@@ -45,7 +66,7 @@
                                 <img src="../images/ic_search.svg" alt="">
                             </a></li>
                         <li><a href="#">
-                                <img src="../images/ic_profile.png" alt="">
+                                <img onclick="chaqir()" src="../images/ic_profile.png" alt="">
                             </a></li>
                         <li><a href="#">
                                 <img src="../images/ic_cart.png" alt="">
@@ -63,7 +84,7 @@
                 <div class="navbar-icon-img">
                     <ul>
                         <li><a href="../search/index.html"><img src="../images/ic_search.svg" alt=""></a></li>
-                        <li><a href="#"><img src="../images/ic_profile.png" alt=""></a></li>
+                        <li><a href="#"><img onclick="chaqir()" src="../images/ic_profile.png" alt=""></a></li>
                         <li><a href="#"><img src="../images/ic_cart.png" alt=""></a></li>
                     </ul>
                 </div>
