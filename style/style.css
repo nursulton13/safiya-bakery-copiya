@@ -588,12 +588,8 @@ a.dropdown {
   .card {
     width: 100%;
   }
-  .screen-menu > ul > li > a {
-    font-size: 10px;
-  }
   #language {
-    width: 40px;
-    font-size: 10px;
+    font-size: 17px;
     font-weight: 600;
   }
 }
