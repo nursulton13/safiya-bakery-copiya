@@ -31,6 +31,22 @@
                 <a href="#">Напишите нам</a>
             </div>
         </div>
+
+        <div class="backet" id="backet">
+            <div class="inside-backet">
+                <div class="backet-title">
+                    <p>Корзина</p>
+                    <img onclick="yop()" style="cursor:pointer;width:25px;height:25px"
+                        src="https://img.icons8.com/ios/50/000000/close-window.png" />
+                </div>
+                <div class="product">
+                    <p>Ваша корзина пуста. <br>Пожалуйста добавьте продукты</p>
+                </div>
+            </div>
+            <div class="fixed-button">
+                <a href="#">Напишите нам</a>
+            </div>
+        </div>
     
         <div class="navbar">
             <div class="inside-navbar">
@@ -47,7 +63,7 @@
                         <li><a href="#">О нас</a></li>
                         <li><a href="../menyu/index.html">Меню</a></li>
                         <li><a href="../news/index.html">Новости</a></li>
-                        <li><a href="#">Рестораны</a></li>
+                        <li><a href="../restoran/index.html">Рестораны</a></li>
                         <li><a href="../contact/index.html">Контакты</a></li>
                         <li><a class="dropdown" href="#">
                                 <span class="phone">+998 78 113 40 40</span>
@@ -67,7 +83,7 @@
                                 <img onclick="chaqir()" src="../images/ic_profile.png" alt="">
                             </a></li>
                         <li><a href="#">
-                                <img src="../images/ic_cart.png" alt="">
+                                <img onclick="backetOpen()" src="../images/ic_cart.png" alt="">
                             </a></li>
                     </ul>
                 </div>
@@ -83,7 +99,7 @@
                     <ul>
                         <li><a href="../search/index.html"><img src="../images/ic_search.svg" alt=""></a></li>
                         <li><a href="#"><img onclick="chaqir()" src="../images/ic_profile.png" alt=""></a></li>
-                        <li><a href="#"><img src="../images/ic_cart.png" alt=""></a></li>
+                        <li><a href="#"><img onclick="backetOpen()" src="../images/ic_cart.png" alt=""></a></li>
                     </ul>
                 </div>
             </div>
@@ -104,7 +120,7 @@
                         <li><a href="#">О нас</a></li>
                         <li><a href="../menyu/index.html">Меню</a></li>
                         <li><a href="../news/index.html">Новости</a></li>
-                        <li><a href="#">Рестораны</a></li>
+                        <li><a href="../index.html">Рестораны</a></li>
                         <li><a href="../contact/index.html">Контакты</a></li>
                         <li>
                             <select name="language" id="language" size="1">
@@ -186,7 +202,7 @@
                     <li><a href="#">О нас</a></li>
                     <li><a href="../menyu/index.html">Меню</a></li>
                     <li><a href="../news/index.html">Новости</a></li>
-                    <li><a href="#">Рестораны</a></li>
+                    <li><a href="../restoran/index.html">Рестораны</a></li>
                     <li><a href="#">Публичная оферта</a></li>
                     <li><a href="#">Карьера</a></li>
                     <li><a href="../contact/index.html">Контакты</a></li>

@@ -16,8 +16,8 @@
   position: fixed;
   z-index: 2000000;
   width:100%;
-  height: 100vh;
-  max-width: 1400px; 
+  height: 100vh; 
+  max-width: 1400px;
   align-items: center;
   justify-content: center;
   background-color: rgba(51, 51, 51, 0.294);
@@ -176,8 +176,8 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #fff;
   padding: 18px 0px;
+  background-color: #ffffff;
   box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
   background-image: url(../images/ic_nav_bg.png);
   background-repeat: no-repeat;
@@ -406,70 +406,141 @@ a.dropdown {
   outline: none;
   background-color: transparent;
 }
-.about-us {
-  padding: 80px;
-}
-.about-us > p {
-  color: #3f3f3f;
-  font-size: 60px;
-  font-family: "Monly Lite", cursive;
-  margin-bottom: 3rem;
-  line-height: 1.2;
-}
-.inside-about-us {
-  display: flex;
-  justify-content: space-between;
-}
-.about-text,
-.about-img {
-  padding: 0 15px;
-  width: 50%;
-}
-.about-text > p {
-  color: #424242;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  font-family: "Gotham Pro", sans-serif;
-  font-weight: normal;
-  text-align: left;
-}
-.about-img > .img img {
-  width: 100%;
-}
-
-@media screen and (max-width: 900px) {
-  .inside-about-us {
-    display: block;
-  }
-  .about-text,
-  .about-img {
+.restoran{
     width: 100%;
-  }
-  .about-text p:nth-child(1){
-      display: none;
-  }
-  .about-us {
-    padding: 42px 30px;
-  }
-  .about-us > p{
-      margin-bottom: 0;
-      padding-left: 15px;
-  }
+    height: calc(100vh - 96px);
+    /* padding-top: 96px; */
+    position: relative;
 }
-@media screen and (max-width: 500px) {
-  .about-us {
-    padding: 32px 20px;
-  }
-  .about-text p:nth-child(2){
-      display: none;
-  }
-  .about-us > p {
+.restoran >iframe{
+    width: 100%;
+    height: 100%;
+}
+.btn-group{
+    position: absolute;
+    top: 13%;
+    right: 4%;
+}
+.btn-group button{
+    padding: 8px 17px;
+    margin: 5px;
+    border: none;
+    background-color: crimson;
+    color: white;
+    line-height: 1.2;
+    font-size: 1rem;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#restoran-spisok{
+    display: none;
+}
+.restoran-container{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding: 80px 0;
+}
+.restoran-title{
+    padding:  40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.restoran-title > p{
+    color: #3f3f3f;
     font-size: 40px;
     text-align: center;
-    margin-bottom: 2rem;
-  }
+    font-family: "Monly Lite", cursive;
 }
+.btn-group2 button{
+    padding: 8px 17px;
+    margin: 5px;
+    border: none;
+    background-color: crimson;
+    color: white;
+    line-height: 1.2;
+    font-size: 1rem;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.restoran1{
+    display: flex;
+    border-bottom: 2px solid rgb(190, 190, 190);
+}
+.restoran-adress{
+    flex:9;
+    padding: 21px 10.5px;
+}
+.restoran-adress a{
+    font-size: 1.5rem;
+    color: #201e1e;
+    text-transform: uppercase;
+    font-family: "Gotham Pro", sans-serif;
+    text-decoration: none;
+}
+.restoran-adress  p{
+    padding: 20px 0;
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: "Gotham Pro", sans-serif;
+}
+.number-rejim-rabota p, .podrobnie p{
+    padding: 15px 0;
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: "Gotham Pro", sans-serif;
+}
+span{
+    color: rgb(155, 154, 154);
+}
+.number-rejim-rabota, .podrobnie{
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px 10.5px;
+}
+.number-rejim-rabota{
+    align-items: flex-start;
+}
+.podrobnie{
+     padding: 21px 10.5px;
+}
+@media screen and (max-width:950px) {
+    .restoran-adress{
+        flex:6;
+    }
+    .number-rejim-rabota, .podrobnie{
+    flex:3;
+    }
+}
+@media screen and (max-width:620px) {
+    .restoran-adress{
+        flex:4;
+    }
+    .number-rejim-rabota, .podrobnie{
+        flex:4;
+    }      
+}
+@media screen and (max-width:500px) {
+    .restoran1{
+        display: block;
+    }    
+    .restoran-adress, .number-rejim-rabota, .podrobnie{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    } 
+    .restoran-title{
+        display: block;
+        text-align: center;
+    }
+}
+
+
 .footer {
   background-image: url(../images/ic_nav_bg.png);
   background-size: cover;

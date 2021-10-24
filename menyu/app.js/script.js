@@ -1,6 +1,7 @@
 var x =  document.getElementById("screen-menu");
 var y = document.getElementById("body1");
-var m =document.getElementById("modal");
+var m = document.getElementById("modal");
+var b = document.getElementById("backet");
 
 function button(params) {
    if (x.style.display === "none"){
@@ -15,4 +16,8 @@ function chaqir(params) {
 }
 function yop(params) {
     m.style.display = "none";
+    b.style.display = "none";
+}
+function backetOpen(params) {
+    b.style.display = "flex";
 }

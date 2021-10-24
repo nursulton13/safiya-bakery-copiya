@@ -1,3 +1,15 @@
+var spiska = document.getElementById("restoran-spisok");
+var maps = document.getElementById("restoran-maps");
+
+function spisok(params) {
+    spiska.style.display = "block";
+    maps.style.display = "none";
+}
+function map(params) {
+    maps.style.display = "block";
+    spiska.style.display = "none";
+}
+
 var x =  document.getElementById("screen-menu");
 var y = document.getElementById("body1");
 var m = document.getElementById("modal");

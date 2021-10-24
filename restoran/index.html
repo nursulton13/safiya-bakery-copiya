@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Торт и выпечка от Safia в Ташкенте | Safia Cafe & Bakery</title>
+    <link rel="icon" sizes="60x60" href="../images/favicon.ico">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="container-modal" id="modal">
+            <div class="modal">
+                <div class="modal-exit">
+                    <img onclick="yop()" style="cursor:pointer;width:25px;height:25px"
+                        src="https://img.icons8.com/ios/50/000000/close-window.png" />
+                </div>
+                <div class="modal-img-logo">
+                    <img src="../images/logo.svg" alt="">
+                </div>
+                <div class="modal-input">
+                    <input type="text" placeholder="Введите номер телефона">
+                </div>
+                <div class="modal-button">
+                    <button type="submit">Далее</button>
+                </div>
+            </div>
+            <div class="fixed-button">
+                <a href="#">Напишите нам</a>
+            </div>
+        </div>
+
+        <div class="backet" id="backet">
+            <div class="inside-backet">
+                <div class="backet-title">
+                    <p>Корзина</p>
+                    <img onclick="yop()" style="cursor:pointer;width:25px;height:25px"
+                        src="https://img.icons8.com/ios/50/000000/close-window.png" />
+                </div>
+                <div class="product">
+                    <p>Ваша корзина пуста. <br>Пожалуйста добавьте продукты</p>
+                </div>
+            </div>
+            <div class="fixed-button">
+                <a href="#">Напишите нам</a>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="inside-navbar">
+                <div class="navbar-logo">
+                    <div class="navbar-logo-img">
+                        <a href="../index.html"><img src="../images/logo.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="navbar-city-link">
+                    <button navbar-city-button>Ташкент</button>
+                </div>
+                <div class="navbar-item">
+                    <ul>
+                        <li><a href="../o nas/index.html">О нас</a></li>
+                        <li><a href="../menyu/index.html">Меню</a></li>
+                        <li><a href="../news/index.html">Новости</a></li>
+                        <li><a href="#">Рестораны</a></li>
+                        <li><a href="../contact/index.html">Контакты</a></li>
+                        <li><a class="dropdown" href="#">
+                                <span class="phone">+998 78 113 40 40</span>
+                                <span class="timetable">Ежедневно с 8:00 до 23:00</span>
+                            </a></li>
+                        <li>
+                            <select name="language" id="language" size="1">
+                                <option value="Rus">Русский</option>
+                                <option value="Eng">English</option>
+                                <option value="Uzb">uzbekcha</option>
+                            </select>
+                        </li>
+                        <li><a href="../search/index.html">
+                                <img src="../images/ic_search.svg" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <img onclick="chaqir()" src="../images/ic_profile.png" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <img onclick="backetOpen()" src="../images/ic_cart.png" alt="">
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inside-navbar2">
+                <div class="navbar-menu-button" onclick="button()">
+                    <img src="../images/Без названия.svg" alt="">
+                </div>
+                <div class="navbar-logo-img2">
+                    <a href="../index.html"><img src="../images/logo.svg" alt=""></a>
+                </div>
+                <div class="navbar-icon-img">
+                    <ul>
+                        <li><a href="../search/index.html"><img src="../images/ic_search.svg" alt=""></a></li>
+                        <li><a href="#"><img onclick="chaqir()" src="../images/ic_profile.png" alt=""></a></li>
+                        <li><a href="#"><img onclick="backetOpen()" src="../images/ic_cart.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="fixed-button">
+            <a href="#">Напишите нам</a>
+        </div>
+
+        <div class="inside-container">
+            <!-- Corusel-img -->
+            <div class="corusel-img">
+                <div class="screen-menu" id="screen-menu">
+                    <ul style="height: 10%;">
+                        <li><a href="#">Ташкент</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="../o nas/index.html">О нас</a></li>
+                        <li><a href="../menyu/index.html">Меню</a></li>
+                        <li><a href="../news/index.html">Новости</a></li>
+                        <li><a href="#">Рестораны</a></li>
+                        <li><a href="../contact/index.html">Контакты</a></li>
+                        <li>
+                            <select name="language" id="language" size="1">
+                                <option value="Rus">Русский</option>
+                                <option value="Eng">English</option>
+                                <option value="Uzb">Uzbekcha</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="restoran" id="restoran-maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.32982609886!2d69.29133875458231!3d41.36691830629007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef33586528187%3A0xb8f258cfa041854b!2zU2FmaWEgLSDQmtC-0L3QtNC40YLQtdGA0YHQutC40Lkg0JTQvtC8!5e0!3m2!1suz!2s!4v1635065297372!5m2!1suz!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="btn-group">
+                    <button>Карта</button>
+                    <button onclick="spisok()" style="background-color: rgba(151, 151, 151, 0.828);">Список</button>
+                </div>
+            </div>
+            <div id="restoran-spisok">
+                <div class="restoran-container">
+                    <div class="restoran-title">
+                        <p>Рестораны</p>
+                        <div class="btn-group2">
+                            <button onclick="map()" style="background-color: rgba(151, 151, 151, 0.828);">Карта</button>
+                            <button>Список</button>
+                        </div>
+                    </div>
+                    <div class="restoran1">
+                        <div class="restoran-adress">
+                            <a href="#">Ташми</a>
+                            <p><span>Ташми</span><br>ул. Фароби 446А</p>
+                        </div>
+                        <div class="number-rejim-rabota">
+                            <div class="number">
+                                <p><span>Номер телефона:</span> <br>78 113 40 40</p>
+                            </div>
+                            <div class="rejim-rabota">
+                                <p><span>Режим работы:</span> <br>08:00-23:00</p>
+                            </div>
+                        </div>
+                        <div class="podrobnie">
+                            <div class="podr-icon">
+                                <img src="./images/ic_parking.svg" alt="">
+                            </div>
+                            <p><a href="#">Подробно</a></p>
+                        </div>
+                    </div>
+                    <div class="restoran1">
+                        <div class="restoran-adress">
+                            <a href="#">Ташми</a>
+                            <p><span>Ташми</span><br>ул. Фароби 446А</p>
+                        </div>
+                        <div class="number-rejim-rabota">
+                            <div class="number">
+                                <p><span>Номер телефона:</span> <br>78 113 40 40</p>
+                            </div>
+                            <div class="rejim-rabota">
+                                <p><span>Режим работы:</span> <br>08:00-23:00</p>
+                            </div>
+                        </div>
+                        <div class="podrobnie">
+                            <div class="podr-icon">
+                                <img src="./images/ic_parking.svg" alt="">
+                            </div>
+                            <p><a href="#">Подробно</a></p>
+                        </div>
+                    </div>
+                    <div class="restoran1">
+                        <div class="restoran-adress">
+                            <a href="#">Ташми</a>
+                            <p><span>Ташми</span><br>ул. Фароби 446А</p>
+                        </div>
+                        <div class="number-rejim-rabota">
+                            <div class="number">
+                                <p><span>Номер телефона:</span> <br>78 113 40 40</p>
+                            </div>
+                            <div class="rejim-rabota">
+                                <p><span>Режим работы:</span> <br>08:00-23:00</p>
+                            </div>
+                        </div>
+                        <div class="podrobnie">
+                            <div class="podr-icon">
+                                <img src="./images/ic_parking.svg" alt="">
+                            </div>
+                            <p><a href="#">Подробно</a></p>
+                        </div>
+                    </div>
+                    <div class="restoran1">
+                        <div class="restoran-adress">
+                            <a href="#">Ташми</a>
+                            <p><span>Ташми</span><br>ул. Фароби 446А</p>
+                        </div>
+                        <div class="number-rejim-rabota">
+                            <div class="number">
+                                <p><span>Номер телефона:</span> <br>78 113 40 40</p>
+                            </div>
+                            <div class="rejim-rabota">
+                                <p><span>Режим работы:</span> <br>08:00-23:00</p>
+                            </div>
+                        </div>
+                        <div class="podrobnie">
+                            <div class="podr-icon">
+                                <img src="./images/ic_parking.svg" alt="">
+                            </div>
+                            <p><a href="#">Подробно</a></p>
+                        </div>
+                    </div>
+                    <div class="restoran1">
+                        <div class="restoran-adress">
+                            <a href="#">Ташми</a>
+                            <p><span>Ташми</span><br>ул. Фароби 446А</p>
+                        </div>
+                        <div class="number-rejim-rabota">
+                            <div class="number">
+                                <p><span>Номер телефона:</span> <br>78 113 40 40</p>
+                            </div>
+                            <div class="rejim-rabota">
+                                <p><span>Режим работы:</span> <br>08:00-23:00</p>
+                            </div>
+                        </div>
+                        <div class="podrobnie">
+                            <div class="podr-icon">
+                                <img src="./images/ic_parking.svg" alt="">
+                            </div>
+                            <p><a href="#">Подробно</a></p>
+                        </div>
+                    </div>
+                    <div class="restoran1">
+                        <div class="restoran-adress">
+                            <a href="#">Ташми</a>
+                            <p><span>Ташми</span><br>ул. Фароби 446А</p>
+                        </div>
+                        <div class="number-rejim-rabota">
+                            <div class="number">
+                                <p><span>Номер телефона:</span> <br>78 113 40 40</p>
+                            </div>
+                            <div class="rejim-rabota">
+                                <p><span>Режим работы:</span> <br>08:00-23:00</p>
+                            </div>
+                        </div>
+                        <div class="podrobnie">
+                            <div class="podr-icon">
+                                <img src="./images/ic_parking.svg" alt="">
+                            </div>
+                            <p><a href="#">Подробно</a></p>
+                        </div>
+                    </div>
+                    <div class="restoran1">
+                        <div class="restoran-adress">
+                            <a href="#">Ташми</a>
+                            <p><span>Ташми</span><br>ул. Фароби 446А</p>
+                        </div>
+                        <div class="number-rejim-rabota">
+                            <div class="number">
+                                <p><span>Номер телефона:</span> <br>78 113 40 40</p>
+                            </div>
+                            <div class="rejim-rabota">
+                                <p><span>Режим работы:</span> <br>08:00-23:00</p>
+                            </div>
+                        </div>
+                        <div class="podrobnie">
+                            <div class="podr-icon">
+                                <img src="./images/ic_parking.svg" alt="">
+                            </div>
+                            <p><a href="#">Подробно</a></p>
+                        </div>
+                    </div>
+                    <div class="restoran1" style="border:none">
+                        <div class="restoran-adress">
+                            <a href="#">Ташми</a>
+                            <p><span>Ташми</span><br>ул. Фароби 446А</p>
+                        </div>
+                        <div class="number-rejim-rabota">
+                            <div class="number">
+                                <p><span>Номер телефона:</span> <br>78 113 40 40</p>
+                            </div>
+                            <div class="rejim-rabota">
+                                <p><span>Режим работы:</span> <br>08:00-23:00</p>
+                            </div>
+                        </div>
+                        <div class="podrobnie">
+                            <div class="podr-icon">
+                                <img src="./images/ic_parking.svg" alt="">
+                            </div>
+                            <p><a href="#">Подробно</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-img">
+                <img src="../images/girl.png" alt="">
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="../o nas/index.html">О нас</a></li>
+                    <li><a href="../menyu/index.html">Меню</a></li>
+                    <li><a href="../news/index.html">Новости</a></li>
+                    <li><a href="#">Рестораны</a></li>
+                    <li><a href="#">Публичная оферта</a></li>
+                    <li><a href="#">Карьера</a></li>
+                    <li><a href="../contact/index.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="messenger">
+                <div><a href="#"><img src="../images/ic_facebook.png" alt=""></a></div>
+                <div><a href="#"><img src="../images/ic_instagram.png" alt=""></a></div>
+                <div><a href="#"><img src="../images/ic_telegram.png" alt=""></a></div>
+            </div>
+            <div class="footer-company">
+                <p>2021 Safia Cafe & Bakery. Все права защищены.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js/script.js"></script>
+</body>
+
+</html>
