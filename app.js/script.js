@@ -29,3 +29,11 @@ function dropdownStart() {
     document.getElementById("dropdown-menu").style.display = "none";
   }
 }
+function dropdownStart1() {
+  var c = document.getElementById("dropdown-menu1").style.display;
+  if (c == "block") {
+    document.getElementById("dropdown-menu1").style.display = "none";
+  } else {
+    document.getElementById("dropdown-menu1").style.display = "flex";
+  }
+}

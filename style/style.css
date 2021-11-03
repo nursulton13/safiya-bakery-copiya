@@ -275,7 +275,7 @@ a.dropdown-item1{
   font-family: sans-serif;
 
 }
-#dropdown-menu{
+#dropdown-menu, #dropdown-menu1{
   display: none;
   flex-direction: column;
   position: absolute;
@@ -286,7 +286,21 @@ a.dropdown-item1{
   border-radius: 5px;
 }
 
- .after {
+#dropdown-menu1{
+  height: 80px;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  padding: 15px;
+  background: white;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  bottom:0px;
+  right:2%
+}
+
+ a.after {
   color: rgba(0, 0, 0, 0.9);
   font-weight: 500;
   font-size: 17px;
@@ -432,7 +446,9 @@ li > a#after.after::after{
   flex-direction: column;
   justify-content: space-evenly;
 }
-
+.screen-menu > ul:nth-child(2){
+  position: relative;
+}
 .screen-menu > ul > li > a {
   text-decoration: none;
   font-family: "Gotham Pro", Arial, sans-serif;
