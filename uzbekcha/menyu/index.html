@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тоrt Toshkentda sotib olish | Safia Cafe & Bakery</title>
+    <link rel="icon" sizes="60x60" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../menyu/style/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="container-modal" id="modal">
+            <div class="modal">
+                <div class="modal-exit">
+                    <img onclick="yop()" style="cursor:pointer;width:25px;height:25px"
+                        src="https://img.icons8.com/ios/50/000000/close-window.png" />
+                </div>
+                <div class="modal-img-logo">
+                    <img src="../images/logo.svg" alt="">
+                </div>
+                <div class="modal-input">
+                    <input type="text" placeholder="Iltimos raqamingizni kiriting">
+                </div>
+                <div class="modal-button">
+                    <button type="submit">Davom ettish</button>
+                </div>
+            </div>
+            <div class="fixed-button">
+                <a href="#">Bizga yozing</a>
+            </div>
+        </div>
+
+        <div class="backet" id="backet">
+            <div class="inside-backet">
+                <div class="backet-title">
+                    <p>Savatcha</p>
+                    <img onclick="yop()" style="cursor:pointer;width:25px;height:25px"
+                        src="https://img.icons8.com/ios/50/000000/close-window.png" />
+                </div>
+                <div class="product">
+                    <p>Sizning savatingiz bo'sh. <br>Iltimos mahsulotni tanlang</p>
+                </div>
+            </div>
+            <div class="fixed-button">
+                <a href="#">Bizga yozing</a>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="inside-navbar">
+                <div class="navbar-logo">
+                    <div class="navbar-logo-img">
+                        <a href="../index.html"><img src="../images/logo.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="navbar-city-link">
+                    <button navbar-city-button onclick="city()">Toshkent</button>
+                </div>
+                <div class="navbar-item">
+                    <ul>
+                        <li><a href="../o nas/index.html">Biz haqimizda</a></li>
+                        <li><a href="../menyu/index.html">Menyu</a></li>
+                        <li><a href="../news/index.html">Yangiliklar</a></li>
+                        <li><a href="../restoran/index.html">Restoranlar</a></li>
+                        <li><a href="../contact/index.html">Aloqa</a></li>
+                        <li><a class="dropdown" href="#">
+                                <span class="phone">+998 78 113 40 40</span>
+                                <span class="timetable">Har kuni 8:00 dan 23:00 gacha</span>
+                            </a></li>
+                        <li>
+                            <a class="after" style="
+                                    color: rgba(0, 0, 0, 0.9);
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    font-family: sans-serif;
+                                " href="#" class="after" id="after" onclick="dropdownStart()">
+                                O'zb
+                            </a>
+                            <div class="dropdown-menu1" id="dropdown-menu">
+                                <a class="dropdown-item1 active" href="../uzbekcha/index.html">O'zbekcha</a>
+                                <a class="dropdown-item1" href="/menyu/index.html">Русский</a>
+                                <a class="dropdown-item1" href="#">English</a>
+                            </div>
+                        <li><a href="../search/index.html">
+                                <img src="../images/ic_search.svg" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <img onclick="chaqir()" src="../images/ic_profile.png" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <img onclick="backetOpen()" src="../images/ic_cart.png" alt="">
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inside-navbar2">
+                <div class="navbar-menu-button" onclick="button()">
+                    <img src="../images/Без названия.svg" alt="">
+                </div>
+                <div class="navbar-logo-img2">
+                    <a href="../index.html"><img src="../images/logo.svg" alt=""></a>
+                </div>
+                <div class="navbar-icon-img">
+                    <ul>
+                        <li><a href="../search/index.html"><img src="../images/ic_search.svg" alt=""></a></li>
+                        <li><a href="#"><img onclick="chaqir()" src="../images/ic_profile.png" alt=""></a></li>
+                        <li><a href="#"><img onclick="backetOpen()" src="../images/ic_cart.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="fixed-button">
+            <a href="#">Bizga yozing</a>
+        </div>
+        
+        <div class="inside-container">
+            <!-- Corusel-img -->
+            <div class="corusel-img">
+                <div class="screen-menu" id="screen-menu">
+                    <ul style="height: 10%;">
+                        <li><a href="#">Toshkent</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="./o nas/index.html">Biz haqimizda</a></li>
+                        <li><a href="./menyu/index.html">Menyu</a></li>
+                        <li><a href="./news/index.html">Yangiliklar</a></li>
+                        <li><a href="./restoran/index.html">Restoranlar</a></li>
+                        <li><a href="./contact/index.html">Aloqa</a></li>
+                        <li>
+                            <select name="language" id="language" size="1">
+                                <option value="Uzb"><a href="#">Uzbekcha</a></option>
+                                <option value="Rus"><a href="../index.html">Русский</a></option>
+                                <option value="Eng"><a href="#">English</a></option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box0">
+                <div class="aside-menu">
+                    <p>Menu</p>
+                    <div class="aside-inside-menu">
+                        <ul>
+                            <li style="background-color: transparent;">
+                                <a style="color:rgba(0, 0, 0, 0.6)" href="#">Shirinliklar bu yerda
+                                    <div class="menu-show">
+                                        <ul>
+                                            <li><a href="#">Tortlar</a></li>
+                                            <li><a href="#">Katta tortlar</a></li>
+                                            <li><a href="#">🧇 Dumoloq piroglar</a></li>
+                                            <li><a href="#">Katta piroglar</a></li>
+                                            <li><a href="#">Oshirma xamirli pishiriqlar</a></li>
+                                            <li><a href="#">Qatlama xamirli pishiriqlar</a></li>
+                                            <li><a href="#">Eklerlar</a></li>
+                                            <li><a href="#">Chak - chak</a></li>
+                                            <li><a href="#">Tartaletkalar</a></li>
+                                            <li><a href="#">Pirojniylar</a></li>
+                                            <li><a href="#">Pechenye</a></li>
+                                            <li><a href="#">Kekslar</a></li>
+                                            <li><a href="#">Makaron</a></li>
+                                            <li><a href="#">Go'shtli va shakarsiz pishiriqlar</a></li>
+                                            <li><a href="#">Tugʻilgan kun uchun bezak</a></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#">Yarim tayyor maxsulotlar</a></li>
+                            <li><a href="#">Donador qahva</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="home">
+                    <div class="home-container">
+                        <p>Tortlar</p>
+                        <div class="home-menu">
+                            <input type="text" placeholder="Nima qidiryapsiz?">
+                            <button type="submit">Qidiruv</button>
+                        </div>
+                        <div class="home-card-group">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img1.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Zebra tort</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari
+                                        va mavsumiy rezavor mevalar qo’shilgan.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Qo'shmoq</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img2.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Zebra tort</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari
+                                        va mavsumiy rezavor mevalar qo’shilgan.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Qo'shmoq</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img3.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Zebra tort</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari
+                                        va mavsumiy rezavor mevalar qo’shilgan.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Qo'shmoq</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img1.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Zebra tort</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari
+                                        va mavsumiy rezavor mevalar qo’shilgan.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Qo'shmoq</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img2.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Zebra tort</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari
+                                        va mavsumiy rezavor mevalar qo’shilgan.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Qo'shmoq</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img3.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Zebra tort</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari
+                                        va mavsumiy rezavor mevalar qo’shilgan.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Qo'shmoq</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img1.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Zebra tort</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari
+                                        va mavsumiy rezavor mevalar qo’shilgan.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Qo'shmoq</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img2.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Zebra tort</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari
+                                        va mavsumiy rezavor mevalar qo’shilgan.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Qo'shmoq</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img3.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Zebra tort</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari
+                                        va mavsumiy rezavor mevalar qo’shilgan.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Qo'shmoq</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img1.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Zebra tort</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari
+                                        va mavsumiy rezavor mevalar qo’shilgan.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Qo'shmoq</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img2.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Zebra tort</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari
+                                        va mavsumiy rezavor mevalar qo’shilgan.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Qo'shmoq</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img3.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Zebra tort</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari
+                                        va mavsumiy rezavor mevalar qo’shilgan.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Qo'shmoq</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img1.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Zebra tort</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari
+                                        va mavsumiy rezavor mevalar qo’shilgan.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Qo'shmoq</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img2.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Zebra tort</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari
+                                        va mavsumiy rezavor mevalar qo’shilgan.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Qo'shmoq</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="../images/img3.jpg" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-name">
+                                        <p><a href="#">Zebra tort</a></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <p>Mazali, sirop bilan toʻyintirilgan vanil va shokoladli kekssimon biskvitli tort. Yogurtli sufle, nektarin boʻlakchalari
+                                        va mavsumiy rezavor mevalar qo’shilgan.</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <p>175000</p>
+                                        <a href="#">Qo'shmoq</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-img">
+                <img src="../images/girl.png" alt="">
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="../o nas/index.html">Biz haqimizda</a></li>
+                    <li><a href="../menyu/index.html">Menyu</a></li>
+                    <li><a href="../news/index.html">Yangiliklar</a></li>
+                    <li><a href="../restoran/index.html">Restoranlar</a></li>
+                    <li><a href="#">Ommaviy foydalanish shartlari</a></li>
+                    <li><a href="#">Karyera</a></li>
+                    <li><a href="../contact/index.html">Aloqa</a></li>
+                </ul>
+            </div>
+            <div class="messenger">
+                <div><a href="#"><img src="../images/ic_facebook.png" alt=""></a></div>
+                <div><a href="#"><img src="../images/ic_instagram.png" alt=""></a></div>
+                <div><a href="#"><img src="../images/ic_telegram.png" alt=""></a></div>
+            </div>
+            <div class="footer-company">
+                <p>2021 Safia Cafe & Bakery. Barcha haq-huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js/script.js"></script>
+</body>
+</html>

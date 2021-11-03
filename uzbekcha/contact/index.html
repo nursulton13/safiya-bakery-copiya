@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloqa | Safia Cafe & Bakery</title>
+    <link rel="icon" sizes="60x60" href="../images/favicon.ico">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="container-modal" id="modal">
+            <div class="modal">
+                <div class="modal-exit">
+                    <img onclick="yop()" style="cursor:pointer;width:25px;height:25px"
+                        src="https://img.icons8.com/ios/50/000000/close-window.png" />
+                </div>
+                <div class="modal-img-logo">
+                    <img src="../images/logo.svg" alt="">
+                </div>
+                <div class="modal-input">
+                    <input type="text" placeholder="Iltimos raqamingizni kiriting">
+                </div>
+                <div class="modal-button">
+                    <button type="submit">Davom ettish</button>
+                </div>
+            </div>
+            <div class="fixed-button">
+                <a href="#">Bizga yozing</a>
+            </div>
+        </div>
+
+        <div class="backet" id="backet">
+            <div class="inside-backet">
+                <div class="backet-title">
+                    <p>Savatcha</p>
+                    <img onclick="yop()" style="cursor:pointer;width:25px;height:25px"
+                        src="https://img.icons8.com/ios/50/000000/close-window.png" />
+                </div>
+                <div class="product">
+                    <p>Sizning savatingiz bo'sh. <br>Iltimos mahsulotni tanlang</p>
+                </div>
+            </div>
+            <div class="fixed-button">
+                <a href="#">Bizga yozing</a>
+            </div>
+        </div>
+    
+        <div class="navbar">
+            <div class="inside-navbar">
+                <div class="navbar-logo">
+                    <div class="navbar-logo-img">
+                        <a href="../index.html"><img src="../images/logo.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="navbar-city-link">
+                    <button navbar-city-button onclick="city()">Toshkent</button>
+                </div>
+                <div class="navbar-item">
+                    <ul>
+                        <li><a href="../o nas/index.html">Biz haqimizda</a></li>
+                        <li><a href="../menyu/index.html">Menyu</a></li>
+                        <li><a href="../news/index.html">Yangiliklar</a></li>
+                        <li><a href="../restoran/index.html">Restoranlar</a></li>
+                        <li><a href="../contact/index.html">Aloqa</a></li>
+                        <li><a class="dropdown" href="#">
+                                <span class="phone">+998 78 113 40 40</span>
+                                <span class="timetable">Har kuni 8:00 dan 23:00 gacha</span>
+                            </a></li>
+                        <li>
+                            <a class="after" style="
+                                    color: rgba(0, 0, 0, 0.9);
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    font-family: sans-serif;
+                                " href="#" class="after" id="after" onclick="dropdownStart()">
+                                O'zb
+                            </a>
+                            <div class="dropdown-menu1" id="dropdown-menu">
+                                <a class="dropdown-item1 active" href="../uzbekcha/index.html">O'zbekcha</a>
+                                <a class="dropdown-item1" href="../index.html">Русский</a>
+                                <a class="dropdown-item1" href="./English/index.html">English</a>
+                            </div>
+                        </li>
+                        <li><a href="../search/index.html">
+                                <img src="../images/ic_search.svg" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <img onclick="chaqir()" src="../images/ic_profile.png" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <img onclick="backetOpen()" src="../images/ic_cart.png" alt="">
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inside-navbar2">
+                <div class="navbar-menu-button" onclick="button()">
+                    <img src="../images/Без названия.svg" alt="">
+                </div>
+                <div class="navbar-logo-img2">
+                    <a href="#"><img src="../images/logo.svg" alt=""></a>
+                </div>
+                <div class="navbar-icon-img">
+                    <ul>
+                        <li><a href="../search/index.html"><img src="../images/ic_search.svg" alt=""></a></li>
+                        <li><a href="#"><img onclick="chaqir()" src="../images/ic_profile.png" alt=""></a></li>
+                        <li><a href="#"><img onclick="backetOpen()" src="../images/ic_cart.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="fixed-button">
+            <a href="#">Bizga yozing</a>
+        </div>
+    
+        <div class="inside-container">
+            <!-- Corusel-img -->
+            <div class="corusel-img">
+                <div class="screen-menu" id="screen-menu">
+                    <ul style="height: 10%;">
+                        <li><a href="#">Toshkent</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="../o nas/index.html">Biz haqimizda</a></li>
+                        <li><a href="../menyu/index.html">Menyu</a></li>
+                        <li><a href="../news/index.html">Yangiliklar</a></li>
+                        <li><a href="../restoran/index.html">Restoranlar</a></li>
+                        <li><a href="../contact/index.html">Aloqa</a></li>
+                        <li>
+                            <a class="after" style="
+                                    color: rgba(0, 0, 0, 0.9);
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    font-family: sans-serif;
+                                " href="#" class="after" id="after" onclick="dropdownStart()">
+                                O'zb
+                            </a>
+                            <div class="dropdown-menu1" id="dropdown-menu">
+                                <a class="dropdown-item1 active" href="../uzbekcha/index.html">O'zbekcha</a>
+                                <a class="dropdown-item1" href="/contact/index.html">Русский</a>
+                                <a class="dropdown-item1" href="#">English</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-us">
+                <p>Aloqa</p>
+                <div class="inside-about-us">
+                    <div class="about-text">
+                        <p>&nbsp;</p>
+                    
+                        <p>&nbsp;</p>
+                    
+                        <p>Taklif va savollaringiz bormi?!
+                        Mening operator-do'stlarimda ularga doim javoblar bor!
+                        Har kuni soat 08:00 dan 23:00 gacha Koll-centerimizga 78 113 40 40 raqamlari orqali bog'laning.</p>
+                    
+                        <p>Buyurtmangizni yetkazib berish va olib ketishga mamnuyat bilan qabul qilamiz.</p>
+                    
+                        <p>Yetkazib berish xizmati Toshkent shahrida amalga oshiriladi. Birinchi 3 kilometri - 9 000 so'm, va keyingi har bir
+                        kilometr uchun 1 300so'mdan hisoblanadi.<br>
+                            Yetkazib berish amal qilish tartibi: 09:00 – 22:00.</p>
+                        
+                    </div>
+                    <div class="about-img">
+                        <div class="img">
+                            <img src="../images/contacts.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <div class="footer-img">
+                <img src="../images/girl.png" alt="">
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="../o nas/index.html">Biz haqimizda</a></li>
+                    <li><a href="../menyu/index.html">Menyu</a></li>
+                    <li><a href="../news/index.html">Yangiliklar</a></li>
+                    <li><a href="../restoran/index.html">Restoranlar</a></li>
+                    <li><a href="#">Ommaviy foydalanish shartlari</a></li>
+                    <li><a href="#">Karyera</a></li>
+                    <li><a href="../contact/index.html">Aloqa</a></li>
+                </ul>
+            </div>
+            <div class="messenger">
+                <div><a href="#"><img src="../images/ic_facebook.png" alt=""></a></div>
+                <div><a href="#"><img src="../images/ic_instagram.png" alt=""></a></div>
+                <div><a href="#"><img src="../images/ic_telegram.png" alt=""></a></div>
+            </div>
+            <div class="footer-company">
+                <p>2021 Safia Cafe & Bakery. Barcha haq-huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </div>
+    <script src="../app.js/script.js"></script>
+</body>
+</html>

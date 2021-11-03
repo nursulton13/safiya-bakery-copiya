@@ -72,11 +72,19 @@
                                 <span class="timetable">Ежедневно с 8:00 до 23:00</span>
                             </a></li>
                         <li>
-                            <select name="language" id="language" size="1">
-                                <option value="Rus">Русский</option>
-                                <option value="Eng">English</option>
-                                <option value="Uzb">uzbekcha</option>
-                            </select>
+                            <a class="after" style="
+                                    color: rgba(0, 0, 0, 0.9);
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    font-family: sans-serif;
+                                " href="#" class="after" id="after" onclick="dropdownStart()">
+                                РУС
+                            </a>
+                            <div class="dropdown-menu1" id="dropdown-menu">
+                                <a class="dropdown-item1 active" href="../uzbekcha/index.html">O'zbekcha</a>
+                                <a class="dropdown-item1" href="../index.html">Русский</a>
+                                <a class="dropdown-item1" href="#">English</a>
+                            </div>
                         </li>
                         <li><a href="../search/index.html">
                                 <img src="../images/ic_search.svg" alt="">

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yangiliklar | Safia Cafe & Bakery</title>
+    <link rel="icon" sizes="60x60" href="../images/favicon.ico">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="container-modal" id="modal">
+            <div class="modal">
+                <div class="modal-exit">
+                    <img onclick="yop()" style="cursor:pointer;width:25px;height:25px"
+                        src="https://img.icons8.com/ios/50/000000/close-window.png" />
+                </div>
+                <div class="modal-img-logo">
+                    <img src="../images/logo.svg" alt="">
+                </div>
+                <div class="modal-input">
+                    <input type="text" placeholder="Iltimos raqamingizni kiriting">
+                </div>
+                <div class="modal-button">
+                    <button type="submit">Davom ettish</button>
+                </div>
+            </div>
+            <div class="fixed-button">
+                <a href="#">Bizga yozing</a>
+            </div>
+        </div>
+
+        <div class="backet" id="backet">
+            <div class="inside-backet">
+                <div class="backet-title">
+                    <p>Savatcha</p>
+                    <img onclick="yop()" style="cursor:pointer;width:25px;height:25px"
+                        src="https://img.icons8.com/ios/50/000000/close-window.png" />
+                </div>
+                <div class="product">
+                    <p>Sizning savatingiz bo'sh. <br>Iltimos mahsulotni tanlang</p>
+                </div>
+            </div>
+            <div class="fixed-button">
+                <a href="#">Bizga yozing</a>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="inside-navbar">
+                <div class="navbar-logo">
+                    <div class="navbar-logo-img">
+                        <a href="../index.html"><img src="../images/logo.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="navbar-city-link">
+                    <button navbar-city-button>Toshkent</button>
+                </div>
+                <div class="navbar-item">
+                    <ul>
+                        <li><a href="../o nas/index.html">Biz haqimizda</a></li>
+                        <li><a href="../menyu/index.html">Menyu</a></li>
+                        <li><a href="#">Yangiliklar</a></li>
+                        <li><a href="../restoran/index.html">Restoranlar</a></li>
+                        <li><a href="../contact/index.html">Aloqa</a></li>
+                        <li><a class="dropdown" href="#">
+                                <span class="phone">+998 78 113 40 40</span>
+                                <span class="timetable">Har kuni 8:00 dan 23:00 gacha</span>
+                            </a></li>
+                        <li>
+                            <a class="after" style="
+                                color: rgba(0, 0, 0, 0.9);
+                                font-weight: 500;
+                                font-size: 16px;
+                                font-family: sans-serif;
+                            " href="#" class="after" id="after" onclick="dropdownStart()">
+                                O'zb
+                            </a>
+                            <div class="dropdown-menu1" id="dropdown-menu">
+                                <a class="dropdown-item1 active" href="../uzbekcha/index.html">O'zbekcha</a>
+                                <a class="dropdown-item1" href="/news/index.html">Русский</a>
+                                <a class="dropdown-item1" href="#">English</a>
+                            </div>
+                        </li>
+                        <li><a href="../search/index.html">
+                                <img src="../images/ic_search.svg" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <img onclick="chaqir()" src="../images/ic_profile.png" alt="">
+                            </a></li>
+                        <li><a href="#">
+                                <img onclick="backetOpen()" src="../images/ic_cart.png" alt="">
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inside-navbar2">
+                <div class="navbar-menu-button" onclick="button()">
+                    <img src="../images/Без названия.svg" alt="">
+                </div>
+                <div class="navbar-logo-img2">
+                    <a href="../index.html"><img src="../images/logo.svg" alt=""></a>
+                </div>
+                <div class="navbar-icon-img">
+                    <ul>
+                        <li><a href="../search/index.html"><img src="../images/ic_search.svg" alt=""></a></li>
+                        <li><a href="#"><img onclick="chaqir()" src="../images/ic_profile.png" alt=""></a></li>
+                        <li><a href="#"><img onclick="backetOpen()" src="../images/ic_cart.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="fixed-button">
+            <a href="#">Bizga yozing</a>
+        </div>
+
+        <div class="inside-container">
+            <!-- Corusel-img -->
+            <div class="corusel-img">
+                <div class="screen-menu" id="screen-menu">
+                    <ul style="height: 10%;">
+                        <li><a href="#">Toshkent</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="../o nas/index.html">Biz haqimizda</a></li>
+                        <li><a href="../menyu/index.html">Menyu</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="../restoran/index.html">Restoranlar</a></li>
+                        <li><a href="../contact/index.html">Aloqa</a></li>
+                        <li>
+                            <select name="language" id="language" size="1">
+                                <option value="Uzb"><a href="#">Uzbekcha</a></option>
+                                <option value="Rus"><a href="../index.html">Русский</a></option>
+                                <option value="Eng"><a href="#">English</a></option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="news">
+                <p>Yangiliklar</p>
+                <div class="card-group">
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../images/news1.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <p>Men Sergeli tumanida ikki qavatli katta qandolat uyini ochyapman!</p>
+                            <p>&nbsp;Va u yerda juda ham qulay sharoit va yorqin nurlar bilan yoritilgan, sizning sevimli qanodlat
+                            pishirig'laringizning,hushbo'y hidi ham mavjud?<br>
+                                <br>
+                                Xa, Albatta, siz ushbu xabarni uzoq muddat kutgan edingiz. Shu sabab bilan, ochilish marosimni juda katta, yorqin va
+                                qiziqarli o'tkazadi!<br>
+                                <br>
+                                Sizni 14 avgust kuni soat 18:30 da intizorlik bilan kutib qolaman:<br>
+                                Birlik ko'chasi, 18a Mo'ljal: "Elegant" restorani, musiqa maktabi qarshisida.
+                            </p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Batafsil...</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../images/news2.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <p>Mening sevimli shirintoylarim ❤️</p>
+                            <p> Mening qandolat uyim "UzBrand 2020" ? tanlovining eng yaxshi qahvaxona nominatsiyasi ishtirokchisi bo'lganligini sizga
+                            xabar berishdan mamnunman.<br>
+                                <br>
+                                 Agar mening qandolat uyimni yaxshi ko'rsangiz, meni qo'llab quvatlab, ovoz bering ? <br>
+                                <br>
+                                Shuningdek, keling, birgalikda do'stlarimizga ? ham ovoz bering:<br>
+                                <br>
+                                ✅ Najot Ta’lim<br>
+                                <br>
+                                ✅ Cambridge Learning Center<br>
+                                <br>
+                                ✅ Les Ailes<br>
+                                <br>
+                                Birgalikda biz albatta g'olib bo'lamiz? <br>
+                                <br>
+                                Quyidagi saxifaga o'tib, ovozingizni qoldiring ? t.me/makon_brand_bot<br>
+                                <br>
+                                <br>
+                                <br>
+                            </p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Batafsil...</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../images/news3.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <p>Siz bilarmidingiz?</p>
+                            <p>Shanbi kuni (20.02.2021), Safia asoschilaridan biri, hozirda rivojlanish bo'yicha direktor lavozimida faoliyat
+                            yuritayotgan Bekzod Samigjanov ishtirokidagi intervyuni e'tiboringiga taqdim etmoqchimiz. Unda Bekzod Samigjanov
+                            kompaniyaning yaratilishi va rivojlanishi haqida ajoyib ma'lumotlar bilan bo'lishgan<br>
+                                To'liq intervyuni quyidagi ❤️ havola orqali ko'rishingiz mumkin:
+                                https://www.youtube.com/watch?v=RP3IRLHi5YE&feature=youtu.be
+                            </p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Batafsil...</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-group">
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../images/news4.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <p>Menda yangi ertak, hikoyaning yangi bo'limi boshlanmoqda</p>
+                            <p>Irinia Moshkina(Qandolat mahorati bo'yicha Rossiya oltin medal sohibi) tufayli mening qandolat uyimda sehrli tortlar
+                            paydo bo'ldi. Ularning chiroyini tasvirlash juda qiyin❤️<br>
+                                <br>
+                                Ko'rish va zavqlanishni takfil qilaman?<br>
+                                <br>
+                                Bunday ajoyib tortlarni, buyurtma asosida 3 kun oldin 1 kilosiga 120 000 so'mdan buyurtma qila olasiz.<br>
+                            </p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Batafsil...</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../images/news5.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <p>TTZ hududining barcha aholisiga salom, Siz mening shirin uyimning ochilishini kutganmidingiz?</p>
+                            <p><br>
+                                &nbsp;Filialning rasmiy ochilishi ertaga (08.04.2021) soat 17.00 da bo'lib o'tishini sizlarga mamnuniyat bilan e'lon qilaman.&nbsp;<br>
+                                <br>
+                                &nbsp;Ochilish kunida:&nbsp;<br>
+                                <br>
+                                ? Tanlovlar<br>
+                                ? Sovrinlar<br>
+                                ? Sovg'alar<br>
+                                ? Paxta-qand va boshqa ko'ngil ochar tadbirlab bo'lib o'tadi.<br>
+                                <br>
+                                <br>
+                                Sizni payshanba kuni ushbu manzilda intizorlik bilan kutib qolaman:<br>
+                                <br>
+                                ? Mirzo Ulug'bek tumani, Yuzrabot ko'chasi, 53-bino<br>
+                                <br>
+                                Hurmat ila, Safia❤️ &nbsp;
+                            </p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Batafsil...</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../images/news6.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <p>Yangi fillialimiz ochilmoqda</p>
+                            <p>Siz oʻtkazib yubormasligingiz kerak boʻlgan muhim voqea?<br>
+                                <br>
+                                Mening jamoam Parkent bozori yaqinida filial ochish uchun ancha vaqt urindi? Va nihoyat, bu kunga yetishdik ❤️<br>
+                                Yangi, mutlaqo muhtasham uyda mening har kuni Sizni xursand qiladigan yorqin qandolatchilik uyim ochildi. ?Endi men bu
+                                yerdaman: Mirzo Ulugʻbek tumani, Parkent koʻchasi, 215-uy. Moʻljal: “Makro” supermarketi<br>
+                                <br>
+                                Bizning filialimizda Sizni toʻgʻri tanlov qilishingizga yordam berishdan mamnun boʻlgan maslahatchilar kutib olishadi❤️<br>
+                                Doʻstlar, Sizlarni sabrsizlik bilan kutaman&nbsp;
+                            </p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Batafsil...</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-group">
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../images/news7.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <p>13 mart kuni ushbu fotosurat haqiqiy bo'lib qoladi ?</p>
+                            <p>13 mart kuni ushbu fotosurat haqiqiy bo'lib qoladi ?<br>
+                                Axir biz loyiha bo’yicha yangi filial ochmoqdamiz<br>
+                                <br>
+                                Siz va sizning farzandlaringizni qiziqarli ochilishga taklif qilaman:<br>
+                                ?Konkurslar<br>
+                                ? Sovrinlar<br>
+                                ?Sovg'alar<br>
+                                ?Paxta-qanddan tayyorlangan shirinliklar<br>
+                                ?Kompaniya asoschilari bilan tanishish imkoniyati<br>
+                                Bularning barchasi sizni Toshkent shahridagi yangi filial bilan tanishtirish uchun?<br>
+                                <br>
+                                ⭐Vaqt: 17:00<br>
+                                ?Manzil: Nukus ko'chasi, 39-uy. Ob'ektga yo'nalish: "Baby House" va "Hali ham yosh" do'konlari
+                            </p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Batafsil...</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../images/news8.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <p>Yoʻl yoʻlakay, shirinliklar uchun bir oz vaqt ajrating</p>
+                            <p>Ushbu oyning yana bir filiali endi yana-da qulayroq joyda.<br>
+                                Biz Kichik halka yoʻlida yangi filial ochdik, moʻljal: aeroport “Korzinka” va hammani mehmonga taklif qilamiz.<br>
+                                Oʻzingizni yangi va mazali pishiriqlar bilan xursand qiling, eng muhimi, ular katta assortimentda.<br>
+                                Bizning mohir xodimlarimiz sizga aʼlo kayfiyat inʼom etadi. <br>
+                            </p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Batafsil...</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="../images/news9.jpg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <p>Buni qarang, 22-oktyabrda biz Siz uchun naqadar benazir joy ochganmiz.</p>
+                            <p>Bizning yangi filialimiz quyidagi manzilda joylashadi: Yalangʻoch massivi, 67-uy. Moʻljal: “Lokomotiv” bogʻidan 500 metr
+                            narida (“Chimyon” chorrahasi yaqinida)<br>
+                            U yerda Siz nafaqat xarid bilan oʻzingizni xursand qilishingiz, balki eng mazali pishiriq bilan bir piyola choy
+                            ichishingiz mumkin <br>
+                                Sizni har kuni sabrsizlik bilan kutaman!<br>
+                            </p>
+                        </div>
+                        <div class="card-link">
+                            <a href="#">Batafsil...</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-img">
+                <img src="../images/girl.png" alt="">
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="../o nas/index.html">Biz haqimizda</a></li>
+                    <li><a href="../menyu/index.html">Menyu</a></li>
+                    <li><a href="../news/index.html">Yangiliklar</a></li>
+                    <li><a href="../restoran/index.html">Restoranlar</a></li>
+                    <li><a href="#">Ommaviy foydalanish shartlari</a></li>
+                    <li><a href="#">Karyera</a></li>
+                    <li><a href="../contact/index.html">Aloqa</a></li>
+                </ul>
+            </div>
+            <div class="messenger">
+                <div><a href="#"><img src="../images/ic_facebook.png" alt=""></a></div>
+                <div><a href="#"><img src="../images/ic_instagram.png" alt=""></a></div>
+                <div><a href="#"><img src="../images/ic_telegram.png" alt=""></a></div>
+            </div>
+            <div class="footer-company">
+                <p>2021 Safia Cafe & Bakery. Barcha haq-huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </div>
+    <script src="../app.js/script.js"></script>
+</body>
+
+</html>

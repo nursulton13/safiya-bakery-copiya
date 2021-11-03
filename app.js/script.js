@@ -21,3 +21,11 @@ function yop(params) {
 function backetOpen(params) {
     b.style.display = "flex";
 }
+function dropdownStart() {
+  var p = document.getElementById("dropdown-menu").style.display;
+  if (p == "none") {
+    document.getElementById("dropdown-menu").style.display = "flex";
+  } else {
+    document.getElementById("dropdown-menu").style.display = "none";
+  }
+}
